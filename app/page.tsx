@@ -17,7 +17,7 @@ export default function Page() {
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
 
-  // ---- Upload logs ----
+  // ---- Upload logs -----
   const handleUpload = async () => {
     setError(null);
     if (!file) return setError("Please choose a log file first.");
